@@ -83,8 +83,14 @@
 	}
 </style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script type="text/javascript">
+$.getScript( "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" )
+  .done(function( script, textStatus ) {
+    console.log( textStatus );
+  })
+  .fail(function( jqxhr, settings, exception ) {
+    console.log( "Triggered ajaxError handler." );
+});
 anime.timeline({loop: true})
   .add({
     targets: '.ml8 .circle-white',
