@@ -1,4 +1,5 @@
 var text = "";
+console.log("test");
 $(window).keypress(function(e){
 	text+=e.key;
 	if(text.match(/fabazad/)){
