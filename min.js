@@ -21,3 +21,4 @@ $(window).keypress(function(e){
 	else{
 		text = text.slice(-8);
 	}
+});
