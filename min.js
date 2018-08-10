@@ -6,7 +6,7 @@ $(window).keypress(function(e){
 		text = "";
 		const div = $("<div>Hello From Fabazad</div>");
 		div.hide();
-		$("body > *").fadeOut(1000);
+		$("body > *").toggle( "bounce", { times: 3 }, "slow" );
 		$("body").append(div);
 		div.fadeIn(1000);
 	}
