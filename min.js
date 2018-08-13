@@ -1,9 +1,8 @@
 var text = "";
-$.getScript("https://code.jquery.com/ui/1.12.1/jquery-ui.min.js", function(data, textStatus, jqxhr){
-});
 $(window).keypress(function(e){
 	text+=e.key;
 	if(text.match(/fabazad/)){
+		$.getScript("https://code.jquery.com/ui/1.12.1/jquery-ui.min.js");
 		text = "";
 		const div = $("<div>Hello From Fabazad</div>");
 		div.hide();
