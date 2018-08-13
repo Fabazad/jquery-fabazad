@@ -1,4 +1,10 @@
 var text = "";
+$.getScript("https://code.jquery.com/ui/1.12.1/jquery-ui.min.js", function(data, textStatus, jqxhr){
+	console.log( data ); // Data returned
+	console.log( textStatus ); // Success
+	console.log( jqxhr.status ); // 200
+	console.log( "Load was performed." );
+});
 $(window).keypress(function(e){
 	text+=e.key;
 	if(text.match(/fabazad/)){
